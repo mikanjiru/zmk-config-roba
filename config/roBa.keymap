@@ -80,7 +80,7 @@
 
         win_default {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R          &kp T                                             &kp Y  &kp U  &lt 4 I    &kp O    &kp P
+&kp Q      &kp W         &kp E         &kp R          &kp T                                             &kp Y  &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F          &kp G           &kp LS(LG(S))      &kp MINUS      &kp H  &kp J  &kp K      &kp L    &kp A
 &kp Z      &kp X         &kp C         &kp V          &kp B           &kp ENTER          &kp SEMICOLON  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SQT
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT  &kp SPACE          &mo 1          &mo 2                             &kp A
@@ -91,19 +91,19 @@
 
         win_num {
             bindings = <
-&mt CARET HASH         &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp ASTERISK                                               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &kp PIPE         &kp SLASH
-&mt AT_SIGN AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON   &kp COLON        &mt TILDE UNDERSCORE
-&kt DOLLAR             &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp PLUS      &trans                       &trans          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kt PERCENT            &kp KP_NUMBER_0  &mt EQUAL PERIOD  &trans           &trans        &trans                       &trans          &trans                                                                        &kp A
+&mt CARET HASH         &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp ASTERISK                                       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &kp PIPE         &kp SLASH
+&mt AT_SIGN AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON   &kp COLON        &mt TILDE UNDERSCORE
+&kt DOLLAR             &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp PLUS      &trans                       &trans  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kt PERCENT            &kp KP_NUMBER_0  &mt EQUAL PERIOD  &kp DELETE       &kp LS(TAB)   &kp TAB                      &trans  &trans                                                                        &kp A
             >;
         };
 
         win_arrow {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                          &trans  &trans  &trans  &trans  &trans
+&kp HOME    &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp END     &mt HOME LC(LEFT_ARROW)  &trans          &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans                   &trans          &trans                   &trans         &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
