@@ -167,10 +167,10 @@
 
         win_functions {
             bindings = <
-&trans         &trans     &trans     &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
-&kp AMPERSAND  &kp HASH   &kp TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_VOL_DN2
-&trans         &trans     &trans     &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
+&trans            &trans     &trans        &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp JP_AMPERSAND  &kp HASH   &kp JP_TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_VOL_DN2
+&trans            &trans     &trans        &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
             >;
         };
     };
