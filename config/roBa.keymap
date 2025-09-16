@@ -28,7 +28,6 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
-
 //おしまい
 
 &mt {
@@ -104,10 +103,10 @@
 
         win_num {
             bindings = <
-&mt JP_CARET HASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp ASTERISK                                           &kp JP_LPAREN    &kp JP_RPAREN    &kp BACKSLASH   &kp JP_PIPE      &kp SLASH
-&mt JP_AT JP_AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON   &kp JP_COLON     &mt JP_TILDE JP_UNDERSCORE
-&kt DOLLAR              &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kt PERCENT             &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                              &none
+&kp JP_CARET  &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp ASTERISK                                           &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_YEN      &kp JP_PIPE      &kp SLASH
+&kp JP_AT     &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON   &kp JP_COLON     &kp JP_UNDERSCORE
+&kp DOLLAR    &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kp PERCENT   &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                              &none
             >;
         };
 
