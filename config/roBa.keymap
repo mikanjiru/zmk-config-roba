@@ -76,10 +76,10 @@
 
         win_num {
             bindings = <
-&mt CARET HASH         &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp ASTERISK                                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH   &kp PIPE         &kp SLASH
-&mt AT_SIGN AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON   &kp COLON        &mt TILDE UNDERSCORE
-&kt DOLLAR             &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kt PERCENT            &kp KP_NUMBER_0  &mt EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                                         &kp A
+&mt CARET HASH         &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp ASTERISK                                           &kp LPAR              &kp RPAR             &kp BACKSLASH   &kp PIPE         &kp SLASH
+&mt AT_SIGN AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACE)  &kp SEMICOLON   &kp COLON        &mt TILDE UNDERSCORE
+&kt DOLLAR             &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp AT_SIGN           &kp RIGHT_BRACKET    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kt PERCENT            &kp KP_NUMBER_0  &mt EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                                       &kp A
             >;
         };
 
