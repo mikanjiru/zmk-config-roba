@@ -28,6 +28,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
+
 //おしまい
 
 &mt {
@@ -85,19 +86,21 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
         minus_key: minus_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp JP_EQUAL>;
 
-            mods  = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
         quote_key: quote_key {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_QUOTE>, <&kp JP_DQUOTE>;
 
-            mods  = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -120,7 +123,7 @@
 &kp JP_CARET  &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_ASTERISK                                           &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_YEN      &kp JP_PIPE      &kp SLASH
 &kp JP_AT     &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS        &kp LC(LA(KP_NUMBER_0))      &trans      &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON   &kp JP_COLON     &kp JP_UNDERSCORE
 &kp DOLLAR    &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp JP_PLUS      &kp ENTER                    &trans      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp JP_BACKQUOTE
-&kp PERCENT   &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &mo 1            &kp LS(TAB)      &kp TAB                      &kp DELETE  &none                                                              &none
+&kp PERCENT   &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &mo 1            &kp LS(TAB)      &kp TAB                      &kp DELETE  &mo 6                                                              &none
             >;
         };
 
@@ -129,7 +132,7 @@
 &kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                                &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &none   &none
 &kp HOME    &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP     &trans       &trans      &kp F6          &kp F7          &kp F8      &kp F9  &kp F10
 &kp END     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN   &trans       &trans      &none           &none           &none       &none   &none
-&trans      &trans                   &trans          &none                    &kp LEFT_SHIFT  &kp TAB      &kp DELETE  &mo 2                                               &none
+&trans      &trans                   &trans          &mo 6                    &kp LEFT_SHIFT  &kp TAB      &kp DELETE  &mo 2                                               &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
@@ -159,6 +162,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans          &none
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &bt BT_CLR    &bt BT_CLR_ALL  &none
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                    &to 0
+            >;
+        };
+
+        win_functions {
+            bindings = <
+&trans         &trans     &trans     &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp AMPERSAND  &kp HASH   &kp TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_VOL_DN2
+&trans         &trans     &trans     &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
             >;
         };
     };
