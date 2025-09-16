@@ -95,7 +95,7 @@
             bindings = <
 &kp Q      &kp W         &kp E         &kp R  &kp T                                             &kp Y  &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F  &kp G           &kp LS(LG(S))      &kp LANG1      &kp H  &kp J  &kp K      &kp L    &kp MINUS
-&kp Z      &kp X         &kp C         &kp V  &kp B           &kp ENTER          &kp LANG2      &kp N  &kp M  &kp COMMA  &kp DOT  &kp SQT
+&kp Z      &kp X         &kp C         &kp V  &kp B           &kp ENTER          &kp LANG2      &kp N  &kp M  &kp COMMA  &kp DOT  &kp JP_QUOTE
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &kp LEFT_SHIFT  &kp SPACE          &kp BACKSPACE  &mo 2                             &none
             >;
 
@@ -104,10 +104,10 @@
 
         win_num {
             bindings = <
-&mt CARET HASH         &kp KP_NUMBER_7  &kp KP_NUMBER_8   &kp KP_NUMBER_9  &kp ASTERISK                                           &kp LPAR          &kp RPAR           &kp BACKSLASH   &kp PIPE         &kp SLASH
-&mt AT_SIGN AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5   &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp SEMICOLON   &kp COLON        &mt TILDE UNDERSCORE
-&kt DOLLAR             &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
-&kt PERCENT            &kp KP_NUMBER_0  &mt EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                                 &none
+&mt JP_CARET HASH       &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp ASTERISK                                           &kp JP_LPAREN    &kp JP_RPAREN    &kp BACKSLASH   &kp JP_PIPE      &kp SLASH
+&mt JP_AT JP_AMPERSAND  &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS     &kp LC(LA(KP_NUMBER_0))      &trans      &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON   &kp JP_COLON     &mt JP_TILDE JP_UNDERSCORE
+&kt DOLLAR              &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp PLUS      &kp ENTER                    &trans      &kp JP_LBRACKET  &kp JP_RBRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp GRAVE
+&kt PERCENT             &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &mo 1            &kp LS(TAB)   &kp TAB                      &kp DELETE  &none                                                              &none
             >;
         };
 
