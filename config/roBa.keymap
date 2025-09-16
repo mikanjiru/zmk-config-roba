@@ -76,18 +76,16 @@
         };
 
         minus_key: minus_key {
-            compatible = "zmk,behavior-macro-mod-morph";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp JP_EQUAL>;
-            label = "MINUS_KEY";
 
             mods  = <(MOD_LSFT|MOD_RSFT>);
 
         quote_key: quote_key {
-            compatible = "zmk,behavior-macro-mod-morph";
+            compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_QUOTE>, <&kp JP_DQUOTE>;
-            label = "QUOTE_KEY";
 
             mods  = <(MOD_LSFT|MOD_RSFT>);
         };
