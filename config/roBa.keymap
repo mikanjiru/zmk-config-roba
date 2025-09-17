@@ -30,6 +30,7 @@
 #define JP_HANZEN       GRAVE             // 半角/全角
 
 // スクロール量変更の定義を追記
+
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 //おしまい
@@ -136,6 +137,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
     };
@@ -168,7 +170,7 @@
 &kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                                &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &none   &none
 &kp HOME    &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP     &trans       &trans      &kp F6          &kp F7          &kp F8      &kp F9  &kp F10
 &kp END     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN   &trans       &trans      &none           &none           &none       &none   &none
-&trans      &trans                   &trans          &mo 6                    &kp LEFT_SHIFT  &kp TAB      &kp DELETE  &mo 2                                               &none
+&kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &mo 6                    &kp LEFT_SHIFT  &kp TAB      &kp DELETE  &mo 2                                               &none
             >;
         };
 
@@ -201,10 +203,10 @@
 
         win_functions {
             bindings = <
-&trans            &trans     &trans        &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
-&kp JP_AMPERSAND  &kp HASH   &kp JP_TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
-&trans            &trans     &trans        &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
+&trans            &trans        &trans        &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp JP_AMPERSAND  &kp HASH      &kp JP_TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
             >;
         };
     };
