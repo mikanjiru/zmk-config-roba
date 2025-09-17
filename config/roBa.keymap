@@ -151,7 +151,7 @@
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &kp LEFT_SHIFT  &kp SPACE          &kp BACKSPACE  &mo 2                             &none
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         win_num {
@@ -170,8 +170,6 @@
 &kp END     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN   &trans       &trans      &none           &none           &none       &none   &none
 &trans      &trans                   &trans          &mo 6                    &kp LEFT_SHIFT  &kp TAB      &kp DELETE  &mo 2                                               &none
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_DOWN) LC(PAGE_UP)>;
         };
 
         MOUSE {
