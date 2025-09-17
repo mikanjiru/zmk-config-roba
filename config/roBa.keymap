@@ -57,14 +57,39 @@
     combos {
         compatible = "zmk,combos";
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        bluetooth_0 {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <42 5>;
         };
 
-        to_bluetooth {
-            bindings = <&to 5>;
-            key-positions = <42 26>;
+        bluetooth_1 {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <42 6>;
+        };
+
+        bluetooth_2 {
+            bindings = <&bt BT_SEL 2>;
+            key-positions = <42 7>;
+        };
+
+        bluetooth_4 {
+            bindings = <&bt BT_SEL 4>;
+            key-positions = <42 9>;
+        };
+
+        bluetooth_3 {
+            bindings = <&bt BT_SEL 3>;
+            key-positions = <42 8>;
+        };
+
+        bluetooth_clear {
+            bindings = <&bt BT_CLR_ALL>;
+            key-positions = <42 21>;
+        };
+
+        to_win {
+            bindings = <&to 0>;
+            key-positions = <42 1>;
         };
     };
 
@@ -110,8 +135,8 @@
         win_default {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R  &kp T                                             &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F  &kp G           &kp LS(LG(S))      &kp LANG1      &kp H  &kp J  &kp K      &kp L    &minus_key
-&kp Z      &kp X         &kp C         &kp V  &kp B           &kp ENTER          &kp LANG2      &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
+&kp A      &kp S         &kp D         &kp F  &kp G           &kp LS(LG(S))      &kp LANG2      &kp H  &kp J  &kp K      &kp L    &minus_key
+&kp Z      &kp X         &kp C         &kp V  &kp B           &kp ENTER          &kp LANG1      &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &kp LEFT_SHIFT  &kp SPACE          &kp BACKSPACE  &mo 2                             &none
             >;
 
@@ -140,8 +165,8 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB1  &mkp MB3  &mkp MB2  &mkp MB2
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB1  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
@@ -169,7 +194,7 @@
             bindings = <
 &trans            &trans     &trans        &trans     &trans                                &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
 &kp JP_AMPERSAND  &kp HASH   &kp JP_TILDE  &trans     &trans       &trans       &trans      &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp K_VOL_DN2
+&kp LC(Z)         &kp LC(X)  &kp LC(C)     &kp LC(V)  &kp LC(Y)    &trans       &trans      &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
 &trans            &trans     &trans        &trans     &kp LS(TAB)  &kp TAB      &kp DELETE  &trans                                                &trans
             >;
         };
