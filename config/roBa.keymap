@@ -31,7 +31,7 @@
 
 // スクロール量変更の定義を追記
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 40
 
 //おしまい
 
@@ -61,39 +61,9 @@
     combos {
         compatible = "zmk,combos";
 
-        bluetooth_0 {
-            bindings = <&bt BT_SEL 0>;
-            key-positions = <42 5>;
-        };
-
-        bluetooth_1 {
-            bindings = <&bt BT_SEL 1>;
-            key-positions = <42 6>;
-        };
-
-        bluetooth_2 {
-            bindings = <&bt BT_SEL 2>;
-            key-positions = <42 7>;
-        };
-
-        bluetooth_4 {
-            bindings = <&bt BT_SEL 4>;
-            key-positions = <42 9>;
-        };
-
-        bluetooth_3 {
-            bindings = <&bt BT_SEL 3>;
-            key-positions = <42 8>;
-        };
-
         bluetooth_clear {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <42 21>;
-        };
-
-        to_win {
-            bindings = <&to 0>;
-            key-positions = <42 1>;
         };
     };
 
@@ -204,7 +174,7 @@
         bluetooth {
             bindings = <
 &none   &to 0   &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &none
+&trans  &to 4   &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &none
 &trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &trans        &trans        &none         &none
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
             >;
