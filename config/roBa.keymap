@@ -65,7 +65,7 @@
 
         bluetooth_clear {
             bindings = <&bt BT_CLR_ALL>;
-            key-positions = <42 21>;
+            key-positions = <42 21 26>;
         };
     };
 
@@ -184,10 +184,10 @@
 
         bluetooth {
             bindings = <
-&none   &to 0   &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none   &to 8   &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &to 5   &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &none
 &trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &to 8         &trans        &none         &none
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
+&trans  &trans  &trans  &trans  &none   &trans      &kp B   &none                                                   &mo 6
             >;
         };
 
@@ -203,7 +203,7 @@
         mac_default {
             bindings = <
 &kp Q         &kp W      &kp E         &kp R          &kp T                                 &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H   &kp J  &kp K      &kp L    &minus_key
+&kp A         &kp S      &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H   &kp J  &kp K      &kp L    &lt_minus_key 7 0
 &kp Z         &kp X      &kp C         &kp V          &kp B  &kp ENTER           &kp LANG1  &kp N   &kp M  &kp COMMA  &kp DOT  &quote_key
 &kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &kp BACKSPACE  &mo 9  &kp LEFT_SHIFT      &kp SPACE  &mo 10                             &mo 6
             >;
