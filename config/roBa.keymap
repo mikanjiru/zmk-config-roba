@@ -114,13 +114,13 @@
         };
     };
 
-        keymap {
+    keymap {
         compatible = "zmk,keymap";
 
         win_default {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R          &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H  &kp J  &kp K      &kp L    &minus_key
+&kp A      &kp S         &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H  &kp J  &kp K      &kp L    &lt 7 MINUS
 &kp Z      &kp X         &kp C         &kp V          &kp B  &kp ENTER           &kp LANG1  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT      &kp SPACE  &mo 2                             &mo 6
             >;
