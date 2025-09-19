@@ -139,7 +139,7 @@
 
         win_arrow {
             bindings = <
-&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                           &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &kp BACKSPACE
+&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                           &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &none
 &kp HOME    &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans   &kp F6          &kp F7          &kp F8      &kp F9     &kp F10
 &kp END     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans   &none           &none           &none       &none      &none
 &kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &kp DELETE               &mo 3          &trans      &kp TAB  &mo 2                                                  &trans
@@ -179,6 +179,53 @@
 &trans  &to 5   &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &none
 &trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &trans        &trans        &none         &none
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
+            >;
+        };
+
+        win_righthand {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp SPACE      &kp BACKSPACE  &trans                          &trans
+            >;
+        };
+
+        mac_default {
+            bindings = <
+&kp Q         &kp W      &kp E         &kp R          &kp T                                 &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H   &kp J  &kp K      &kp L    &minus_key
+&kp Z         &kp X      &kp C         &kp V          &kp B  &kp ENTER           &kp LANG1  &kp N   &kp M  &kp COMMA  &kp DOT  &quote_key
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &kp BACKSPACE  &mo 9  &kp LEFT_SHIFT      &kp SPACE  &mo 10                             &mo 6
+            >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
+        };
+
+        mac_num {
+            bindings = <
+&kp JP_CARET         &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_ASTERISK                                        &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_YEN       &kp JP_PIPE   &kp SLASH
+&kp JP_AT            &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS        &kp LC(LA(KP_NUMBER_0))      &trans   &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON    &kp JP_COLON  &kp JP_UNDERSCORE
+&kp PERCENT          &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp JP_PLUS      &kp ENTER                    &trans   &kp JP_LBRACKET  &kp JP_RBRACKET  &kp EXCLAMATION  &kp QUESTION  &kp JP_BACKQUOTE
+&mt LEFT_WIN DOLLAR  &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &kp DELETE       &mo 9            &trans                       &kp TAB  &mo 11                                                           &trans
+            >;
+        };
+
+        mac_arrow {
+            bindings = <
+&kp ESCAPE    &kp LG(C)                &kp UP_ARROW    &kp LG(V)                &kp LG(A)                           &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &none
+&kp HOME      &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans   &kp F6          &kp F7          &kp F8      &kp F9     &kp F10
+&kp END       &mt HOME LA(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LA(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans   &none           &none           &none       &none      &none
+&kp LEFT_WIN  &kp LCTRL                &kp LEFT_ALT    &kp DELETE               &mo 11         &trans      &kp TAB  &mo 10                                                 &trans
+            >;
+        };
+
+        mac_functions {
+            bindings = <
+&trans            &trans     &trans        &trans     &trans                         &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp JP_AMPERSAND  &kp HASH   &kp JP_TILDE  &trans     &trans     &trans      &trans  &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp LG(Z)         &kp LG(X)  &kp LG(C)     &kp LG(V)  &kp LG(Y)  &trans      &trans  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
+&kp LEFT_WIN      &kp LCTRL  &kp LEFT_ALT  &trans     &trans     &trans      &trans  &trans                                                &trans
             >;
         };
     };
