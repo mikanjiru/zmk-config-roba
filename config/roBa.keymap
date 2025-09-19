@@ -169,7 +169,7 @@
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &mo 6
             >;
         };
 
@@ -177,7 +177,7 @@
             bindings = <
 &none   &to 0   &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &to 5   &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &none
-&trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &trans        &trans        &none         &none
+&trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &to 8         &trans        &none         &none
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &trans
             >;
         };
