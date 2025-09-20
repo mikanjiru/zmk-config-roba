@@ -186,10 +186,10 @@
 
         mac_arrow {
             bindings = <
-&kp ESCAPE    &kp LG(C)                &kp UP_ARROW    &kp LG(V)                &kp LG(A)                           &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &none
-&kp HOME      &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans   &kp F6          &kp F7          &kp F8      &kp F9     &kp F10
-&kp END       &mt HOME LA(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LA(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans   &none           &none           &none       &none      &none
-&kp LEFT_WIN  &kp LCTRL                &kp LEFT_ALT    &kp DELETE               &mo 7          &trans      &kp TAB  &mo 6                                                  &trans
+&kp ESCAPE    &kp LG(C)                &kp UP_ARROW    &kp LG(V)                &kp LG(A)                           &kp LC(LS(R))  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &none
+&kp HOME      &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans   &kp F6         &kp F7          &kp F8      &kp F9     &kp F10
+&kp END       &mt HOME LA(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LA(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans   &none          &none           &none       &none      &none
+&kp LEFT_WIN  &kp LCTRL                &kp LEFT_ALT    &kp DELETE               &mo 7          &trans      &kp TAB  &mo 6                                                 &trans
             >;
         };
 
@@ -213,10 +213,10 @@
 
         game_mode {
             bindings = <
-&trans  &trans          &kp UP_ARROW    &trans           &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                          &to 12
+&none      &none           &kp UP_ARROW    &none            &none                               &none   &none     &msc SCRL_UP    &mkp MB3  &mkp MB2
+&none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans              &trans  &none   &mkp MB1  &msc SCRL_DOWN  &mkp MB3  &none
+&none      &none           &none           &none            &none   &trans              &trans  &none   &none     &none           &none     &none
+&kp LCTRL  &none           &none           &trans           &trans  &kp LEFT_SHIFT      &trans  &trans                                      &to 12
             >;
         };
 
@@ -240,10 +240,10 @@
 
         bluetooth {
             bindings = <
-&none   &to 0   &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &to 11  &trans  &trans  &to 9   &trans      &trans  &trans        &trans        &trans        &trans        &none
-&trans  &trans  &trans  &trans  &trans  &trans      &none   &trans        &to 4         &trans        &none         &none
-&trans  &trans  &trans  &trans  &none   &trans      &kp B   &none                                                   &none
+&none  &to 0   &none  &none   &none                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &to 11  &none  &none   &to 9  &trans      &trans  &none         &none         &none         &none         &none
+&none  &none   &none  &none   &none  &trans      &none   &none         &to 4         &none         &none         &none
+&none  &none   &none  &trans  &none  &trans      &kp B   &none                                                   &none
             >;
         };
     };
