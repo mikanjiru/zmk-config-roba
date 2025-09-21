@@ -204,19 +204,19 @@
 
         righthand {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp SPACE      &kp BACKSPACE  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                                &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &mkp MB1  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp SPACE      &kp BACKSPACE  &trans                            &trans
             >;
         };
 
         game_mode {
             bindings = <
-&none      &none           &kp UP_ARROW    &none            &none                               &none   &none     &msc SCRL_UP    &mkp MB3  &mkp MB2
-&none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans              &trans  &none   &mkp MB1  &msc SCRL_DOWN  &mkp MB3  &none
-&none      &none           &none           &none            &none   &trans              &trans  &none   &none     &none           &none     &none
-&kp LCTRL  &none           &none           &trans           &trans  &kp LEFT_SHIFT      &trans  &trans                                      &to 12
+&none      &none           &kp UP_ARROW    &none            &none                                 &none      &none     &msc SCRL_UP    &mkp MB3  &mkp MB2
+&none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &trans              &trans     &kp A      &mkp MB1  &msc SCRL_DOWN  &mkp MB3  &none
+&none      &none           &none           &none            &none  &trans              &trans     &kp Z      &kp X     &kp C           &none     &none
+&kp LCTRL  &none           &none           &none            &none  &kp LEFT_SHIFT      &kp SPACE  &kp ENTER                                      &to 12
             >;
         };
 
