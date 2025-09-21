@@ -1,6 +1,6 @@
 // スクロール量変更の定義を追記
 
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 15
 
 //
 
@@ -117,7 +117,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
-            bindings = <&msc MOVE_Y(50)>, <&msc MOVE_Y(50)>;
+            bindings = <&msc MOVE_Y(-40)>, <&msc MOVE_Y(40)>;
 
             tap-ms = <40>;
         };
