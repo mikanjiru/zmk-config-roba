@@ -204,8 +204,8 @@
 
         righthand {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                &trans  &trans    &msc SCRL_UP    &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans                                &trans  &trans    &msc SCRL_UP    &mkp MB3  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &kp B          &trans  &trans    &trans          &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &kp SPACE      &kp BACKSPACE  &trans                                      &trans
             >;
