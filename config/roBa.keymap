@@ -64,7 +64,7 @@
         compatible = "zmk,combos";
 
         bluetooth_clear {
-            bindings = <&bt BT_CLR_ALL>;
+            bindings = <&bt BT_CLR>;
             key-positions = <42 21 26>;
         };
     };
