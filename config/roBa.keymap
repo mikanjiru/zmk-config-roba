@@ -139,10 +139,10 @@
 
         win_num {
             bindings = <
-&none             &none            &none                &kp KP_NUMBER_9  &kp TILDE                                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_PIPE   &kp KP_SLASH
-&kp JP_AT         &kp HASH         &kp DOLLAR           &kp P            &kp A        &kp LC(LA(KP_NUMBER_0))      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MINUS
-&kp PERCENT       &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp JP_PLUS  &kp ENTER                    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp PERCENT
-&mt LCTRL DOLLAR  &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &kp DELETE       &trans       &mo 1                        &kp KP_NUMBER_0  &mo 3                                                            &trans
+&none      &none     &none       &kp Y       &kp TILDE                                                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp KP_SLASH
+&kp JP_AT  &kp HASH  &kp DOLLAR  &kp P       &kp A      &kp LC(LA(KP_NUMBER_0))      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS
+&none      &none     &none       &none       &none      &trans                       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &kp PERCENT
+&trans     &trans    &trans      &kp DELETE  &trans     &mo 1                        &kp KP_NUMBER_0  &mo 3                                                               &trans
             >;
         };
 
@@ -157,10 +157,10 @@
 
         win_functions {
             bindings = <
-&trans            &trans        &trans        &trans     &trans                            &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
-&kp JP_AMPERSAND  &kp HASH      &kp JP_TILDE  &trans     &trans     &trans      &trans     &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)  &trans      &trans     &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &trans     &trans     &trans      &kp SPACE  &trans                                                &trans
+&none                 &none                 &kp HOME      &kp LC(Z)           &kp LC(Y)                                   &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&none                 &none                 &kp END       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans     &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none               &none                &trans      &trans     &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
+&kp LCTRL             &kp LEFT_WIN          &kp LEFT_ALT  &trans              &trans               &trans      &kp SPACE  &trans                                                &trans
             >;
         };
 
@@ -206,7 +206,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                                &trans  &trans    &msc SCRL_UP    &mkp MB3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &mkp MB1  &msc SCRL_DOWN  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans         &kp B          &trans  &trans    &trans          &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans         &trans  &trans    &trans          &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &kp SPACE      &kp BACKSPACE  &trans                                      &trans
             >;
         };
