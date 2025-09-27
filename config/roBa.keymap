@@ -73,7 +73,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 2 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -128,10 +128,10 @@
 
         win_default {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R          &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
-&kp Z      &kp X         &kp C         &kp V          &kp B  &kp ENTER           &kp LANG1  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT      &kp SPACE  &mo 2                             &to 12
+&kp Q      &kp W         &kp E         &kp R          &kp T                                         &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F          &kp G           &kp LS(LG(S))      &kp LANG2  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
+&kp Z      &kp X         &kp C         &kp V          &kp B           &kp ENTER          &kp LANG1  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &kp LEFT_SHIFT  &mo 1              &kp SPACE  &mo 2                             &to 12
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -139,28 +139,28 @@
 
         win_num {
             bindings = <
-&kp JP_CARET      &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp JP_ASTERISK                                        &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_YEN       &kp JP_PIPE   &kp SLASH
-&kp JP_AT         &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp MINUS        &kp LC(LA(KP_NUMBER_0))      &trans   &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON    &kp JP_COLON  &kp JP_UNDERSCORE
-&kp PERCENT       &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp JP_PLUS      &kp ENTER                    &trans   &kp JP_LBRACKET  &kp JP_RBRACKET  &kp EXCLAMATION  &kp QUESTION  &kp JP_BACKQUOTE
-&mt LCTRL DOLLAR  &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &kp DELETE       &mo 1            &trans                       &kp TAB  &mo 3                                                            &trans
+&none             &none            &none                &kp KP_NUMBER_9  &kp TILDE                                                  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp JP_PIPE   &kp KP_SLASH
+&kp JP_AT         &kp HASH         &kp DOLLAR           &kp P            &kp A        &kp LC(LA(KP_NUMBER_0))      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_MINUS
+&kp PERCENT       &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp JP_PLUS  &kp ENTER                    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp PERCENT
+&mt LCTRL DOLLAR  &kp KP_NUMBER_0  &mt JP_EQUAL PERIOD  &kp DELETE       &trans       &mo 1                        &kp KP_NUMBER_0  &mo 3                                                            &trans
             >;
         };
 
         win_arrow {
             bindings = <
-&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp LC(A)                           &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT  &kp ENTER  &none
-&kp HOME    &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_UP    &trans      &trans   &kp F6          &kp F7          &kp F8      &kp F9     &kp F10
-&kp END     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp PAGE_DOWN  &trans      &trans   &none           &none           &none       &none      &none
-&kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &kp DELETE               &mo 3          &trans      &kp TAB  &mo 2                                                  &trans
+&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp PAGE_UP                            &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT       &kp ENTER     &kp SLASH
+&kp LC(A)   &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_DOWN   &trans      &trans     &kp F6          &kp F7          &kp SEMICOLON    &kp C         &kp U
+&kp TAB     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp INT_HENKAN  &trans      &trans     &none           &none           &kp EXCLAMATION  &kp QUESTION  &none
+&kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &kp DELETE               &trans          &mo 3       &kp SPACE  &mo 2                                                          &trans
             >;
         };
 
         win_functions {
             bindings = <
-&trans            &trans        &trans        &trans     &trans                         &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
-&kp JP_AMPERSAND  &kp HASH      &kp JP_TILDE  &trans     &trans     &trans      &trans  &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)  &trans      &trans  &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &trans     &trans     &trans      &trans  &trans                                                &trans
+&trans            &trans        &trans        &trans     &trans                            &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp JP_AMPERSAND  &kp HASH      &kp JP_TILDE  &trans     &trans     &trans      &trans     &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)  &kp LC(Y)  &trans      &trans     &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp PRINTSCREEN
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &trans     &trans     &trans      &kp SPACE  &trans                                                &trans
             >;
         };
 
@@ -240,7 +240,7 @@
 
         bluetooth {
             bindings = <
-&none  &to 0   &none  &none  &none                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&none  &to 2   &none  &none  &none                     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &none  &to 11  &none  &none  &to 9  &trans      &none  &none         &none         &none         &none         &none
 &none  &none   &none  &none  &none  &none       &none  &none         &to 4         &none         &none         &none
 &none  &none   &none  &none  &none  &none       &kp B  &none                                                   &none
