@@ -139,19 +139,19 @@
 
         win_num {
             bindings = <
-&none      &none     &none       &kp Y       &kp TILDE                                                &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp KP_SLASH
-&kp JP_AT  &kp HASH  &kp DOLLAR  &kp P       &kp A      &kp LC(LA(KP_NUMBER_0))      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS
-&none      &none     &none       &none       &none      &trans                       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &kp PERCENT
-&trans     &trans    &trans      &kp DELETE  &trans     &mo 1                        &kp KP_NUMBER_0  &mo 3                                                               &trans
+&none      &none     &none       &kp JP_CARET  &kp JP_TILDE                                                    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY  &kp KP_SLASH
+&kp JP_AT  &kp HASH  &kp DOLLAR  &kp PERCENT   &kp JP_AMPERSAND  &kp LC(LA(KP_NUMBER_0))      &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS
+&none      &none     &none       &none         &none             &trans                       &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &kp PERCENT
+&trans     &trans    &trans      &kp DELETE    &trans            &mo 1                        &kp KP_NUMBER_0  &mo 3                                                               &trans
             >;
         };
 
         win_arrow {
             bindings = <
-&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp PAGE_UP                            &kp INT_HENKAN  &kp SCROLLLOCK  &kp INSERT       &kp ENTER     &kp SLASH
-&kp LC(A)   &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_DOWN   &trans      &trans     &kp F6          &kp F7          &kp SEMICOLON    &kp C         &kp U
-&kp TAB     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp INT_HENKAN  &trans      &trans     &none           &none           &kp EXCLAMATION  &kp QUESTION  &none
-&kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &kp DELETE               &trans          &mo 3       &kp SPACE  &mo 2                                                          &trans
+&kp ESCAPE  &kp LC(C)                &kp UP_ARROW    &kp LC(V)                &kp PAGE_UP                            &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_YEN       &kp JP_PIPE   &kp SLASH
+&kp LC(A)   &kp LEFT_ARROW           &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp PAGE_DOWN   &trans      &trans     &kp JP_LBRACE    &kp JP_RBRACE    &kp SEMICOLON    &kp JP_COLON  &kp JP_UNDERSCORE
+&kp TAB     &mt HOME LC(LEFT_ARROW)  &kp DOWN_ARROW  &mt END LC(RIGHT_ARROW)  &kp INT_HENKAN  &trans      &trans     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp EXCLAMATION  &kp QUESTION  &kp JP_BACKQUOTE
+&kp LCTRL   &kp LEFT_WIN             &kp LEFT_ALT    &kp DELETE               &trans          &mo 3       &kp SPACE  &mo 2                                                            &trans
             >;
         };
 
