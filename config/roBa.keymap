@@ -128,10 +128,10 @@
 
         win_default {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R          &kp T                                &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F          &kp G  &kp LS(LG(S))      &kp LANG1  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
-&kp Z      &kp X         &kp C         &kp V          &kp B  &kp ENTER          &kp LANG2  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT     &kp SPACE  &mo 2                             &to 12
+&kp Q      &kp W         &kp E         &kp R          &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG1  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
+&kp Z      &kp X         &kp C         &kp V          &kp B  &kp ENTER           &kp LANG2  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &mo 1  &kp LEFT_SHIFT      &kp SPACE  &mo 2                             &to 12
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -166,10 +166,10 @@
 
         mac_default {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R          &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F          &kp G  &kp LS(LG(S))       &kp LANG2  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
-&kp Z         &kp X      &kp C         &kp V          &kp B  &kp ENTER           &kp LANG1  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
-&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &kp BACKSPACE  &mo 5  &kp LEFT_SHIFT      &kp SPACE  &mo 6                             &to 12
+&kp Q         &kp W      &kp E      &kp R          &kp T                                 &kp Y  &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S      &kp D      &kp F          &kp G  &kp LS(LG(S))       &kp LANG1  &kp H  &kp J  &kp K      &kp L    &lt_minus_key 8 0
+&kp Z         &kp X      &kp C      &kp V          &kp B  &kp ENTER           &kp LANG2  &kp N  &kp M  &kp COMMA  &kp DOT  &quote_key
+&kp LEFT_WIN  &kp LCTRL  &kp GLOBE  &kp BACKSPACE  &mo 5  &kp LEFT_SHIFT      &kp SPACE  &mo 6                             &to 12
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -195,10 +195,10 @@
 
         mac_functions {
             bindings = <
-&none                 &none                 &kp HOME      &kp LG(Z)           &kp LG(Y)                                   &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
-&kp LC(A)             &none                 &kp END       &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans     &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none         &none               &none                &trans      &trans     &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
-&trans                &trans                &trans        &trans              &trans               &trans      &kp SPACE  &trans                                                &trans
+&none                 &none                 &kp HOME  &kp LG(Z)           &kp LG(Y)                                   &kp F1   &kp F2   &kp F3             &kp F4           &kp F5
+&kp LC(A)             &none                 &kp END   &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &trans      &trans     &kp F6   &kp F7   &kp F8             &kp F9           &kp F10
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none     &none               &none                &trans      &trans     &kp F11  &kp F12  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_MUTE
+&trans                &trans                &trans    &trans              &trans               &trans      &kp SPACE  &trans                                                &trans
             >;
         };
 
